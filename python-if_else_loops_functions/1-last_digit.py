@@ -11,5 +11,9 @@ if last_digit > 5:
 if last_digit == 0:
     print(f"{str1} {number} {str2} {last_digit} and is 0")
 
-if last_digit < 6 and last_digit != 0:
+if number < 0:
+    last_digit = -last_digit
+    print(f"{str1} {number} {str2} {last_digit} and is less than 6 and not 0")
+
+elif number > 0 and last_digit < 6 and last_digit != 0:
     print(f"{str1} {number} {str2} {last_digit} and is less than 6 and not 0")
