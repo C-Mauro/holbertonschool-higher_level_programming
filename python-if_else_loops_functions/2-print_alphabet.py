@@ -2,4 +2,4 @@
 alph = "abcdefghijklmnopqrstuvwxyz"
 
 for i in alph:
-    print(f"{i}", end="")
+    print(f"{i}".format(alph), end="")
