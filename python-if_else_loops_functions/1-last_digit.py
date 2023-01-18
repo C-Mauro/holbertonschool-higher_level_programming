@@ -5,7 +5,7 @@ last_digit = int(str(number)[-1])
 str1 = "Last digit of"
 str2 = "is"
 
-if last_digit > 5:
+if number > 0 and last_digit > 5:
     print(f"{str1} {number} {str2} {last_digit} and is greater than 5")
 
 if last_digit == 0:
