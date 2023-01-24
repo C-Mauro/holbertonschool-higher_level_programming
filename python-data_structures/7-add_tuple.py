@@ -7,7 +7,6 @@ def add_tuple(tuple_a=(), tuple_b=()):
         tuple_a = tuple_a + zero
     if len(tuple_b) < 2:
         tuple_b = tuple_b + zero
-    
     tuple_a = tuple_a[:2]
     tuple_b = tuple_b[:2]
     for i in range(len(tuple_a)):
