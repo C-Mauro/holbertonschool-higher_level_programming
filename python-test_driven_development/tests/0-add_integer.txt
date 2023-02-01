@@ -1,0 +1,20 @@
+# 0-add_integer.py
+
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(3, 3)
+6
+>>> add_integer('a', 98)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+>>> add_integer(-4, -8)
+-12
+>>> add_integer('5', 'hello word')
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+>>> add_integer(0, 0)
+0
+>>> add_integer(0, 7)
+7
+
