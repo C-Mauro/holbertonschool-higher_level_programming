@@ -9,6 +9,5 @@ def text_indentation(text):
         if text[i] == "." or text[i] == "?" or text[i] == ":":
             print(text[i])
             print()
-            print()
         else:
-            print(text[i].strip(), end="")
+            print(text[i], end="")
