@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''Integers addition'''
 
+
 def add_integer(a, b=98):
     '''add int a and b'''
     if type(a) == float or type(b) == float:
