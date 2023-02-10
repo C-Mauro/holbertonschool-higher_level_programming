@@ -14,7 +14,7 @@ try:
 except:
     n_list = []
 
-else:
+finally:
     for arg in arguments:
         n_list.append(arg)
     save_to_json_file(n_list, "add_item.json")
