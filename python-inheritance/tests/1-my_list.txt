@@ -18,3 +18,19 @@
 >>> my_list = MyList([-2, -1, 5])
 >>> my_list.print_sorted()
 [-2, -1, 5]
+
+>>> my_list = MyList()
+>>> my_list.append(-4)
+>>> my_list.append(4)
+>>> my_list.append(0)
+>>> print(my_list)
+[-4, 4, 0]
+
+>>> my_list = MyList()
+>>> my_list.append("Sarah")
+>>> my_list.append("Alex")
+>>> my_list.append("Julia")
+>>> my_list.print_sorted()
+['Alex', 'Julia', 'Sarah']
+
+
