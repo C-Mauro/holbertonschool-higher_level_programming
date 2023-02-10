@@ -33,4 +33,5 @@
 >>> my_list.print_sorted()
 ['Alex', 'Julia', 'Sarah']
 
-
+>>> print(my_list)
+['Sarah', 'Julia', 'Alex']
