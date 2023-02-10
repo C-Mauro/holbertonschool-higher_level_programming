@@ -34,4 +34,4 @@
 ['Alex', 'Julia', 'Sarah']
 
 >>> print(my_list)
-['Sarah', 'Julia', 'Alex']
+['Sarah', 'Alex', 'Julia']
