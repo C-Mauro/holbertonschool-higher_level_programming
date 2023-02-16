@@ -68,7 +68,7 @@ class Rectangle(Base):
         '''display a rectangle'''
         if self.__y > 0:
             for i in range(self.__y):
-                print(" ")
+                print("")
         for i in range(self.__height):
             x = " "*self.__x
             width = "#"*self.__width
