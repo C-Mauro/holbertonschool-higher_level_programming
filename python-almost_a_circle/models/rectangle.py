@@ -2,15 +2,16 @@
 '''first rectangle'''
 from models.base import Base
 
+
 class Rectangle(Base):
     '''class rectangle'''
     def __init__(self, width, height, x=0, y=0, id=None):
-        super().__init__(id=None)
+        super().__init__(id)
         self.__width = width
         self.__height = height
         self.__x = x
         self.__y = y
-       
+
     @property
     def width(self):
         return self.__width
@@ -20,7 +21,7 @@ class Rectangle(Base):
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
-            raise TypeError("width must be >= 0")    
+            raise TypeError("width must be >= 0")
         self.__width = value
 
     @property
@@ -46,7 +47,7 @@ class Rectangle(Base):
         if value < 0:
             raise TypeError("width must be >= 0")
         self.__x = value
-    
+
     @property
     def y(self):
         return self.__y
@@ -58,4 +59,3 @@ class Rectangle(Base):
         if value < 0:
             raise TypeError("width must be >= 0")
         self.__y = value
-
