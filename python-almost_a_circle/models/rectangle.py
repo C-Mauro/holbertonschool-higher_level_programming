@@ -83,11 +83,14 @@ class Rectangle(Base):
         height = self.__height
         return "[Rectangle] ({}) {}/{} - {}/{}".format(id, x, y, width, height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         '''update arguments'''
-        argc = len(args)
+        args_len = len(args)
+        kwargs_len = len(kwargs)
         add_args = ['id', 'width', 'height', 'x', 'y']
-
-        if argc > 0:
-            for arg in range(argc):
+        if args_len > 0:
+            for arg in range(args_len):
                 setattr(self, add_args[arg], args[arg])
+        if kwargs_len > 0:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
