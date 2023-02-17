@@ -82,3 +82,12 @@ class Rectangle(Base):
         width = self.__width
         height = self.__height
         return "[Rectangle] ({}) {}/{} - {}/{}".format(id, x, y, width, height)
+
+    def update(self, *args):
+        '''update arguments'''
+        argc = len(args)
+        add_args = ['id', 'width', 'height', 'x', 'y']
+
+        if argc > 0:
+            for arg in range(argc):
+                setattr(self, add_args[arg], args[arg])
