@@ -35,3 +35,10 @@ class Base:
                 json_attrs.append(elem.to_dictionary())
 
             return f.write(cls.to_json_string(json_attrs))
+
+    @staticmethod
+    def from_json_string(json_string):
+        if json_string is None:
+            return "[]"
+        else:
+            return json.loads(json_string)
