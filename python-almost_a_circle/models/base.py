@@ -38,7 +38,8 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
+        '''json string to dictionary'''
         if json_string is None:
-            return "[]"
+            return []
         else:
             return json.loads(json_string)
