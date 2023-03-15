@@ -4,4 +4,4 @@ SELECT
 FROM
     first_table
 WHERE
-    `id` IS 89;
+    `id` IS `89`;
