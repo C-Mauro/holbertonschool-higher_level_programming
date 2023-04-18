@@ -1,4 +1,4 @@
 #!/usr/bin/node
 
-module.export = class Rectagle {}
+module.exports = class Rectagle {}
 
